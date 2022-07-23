@@ -1,0 +1,15 @@
+{
+  "name": "@use-ui/examples",
+  "version": "0.0.1",
+  "description": "",
+  "main": "main.ts",
+  "scripts": {
+    "dev": "vite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@use-ui/components": "workspace:*"
+  }
+}
