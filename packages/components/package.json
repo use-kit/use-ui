@@ -2,9 +2,20 @@
   "name": "@use-ui/components",
   "version": "1.0.0",
   "description": "",
-  "main": "index.ts",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/use-ui.umd.cjs",
+  "module": "./dist/use-ui.js",
+  "exports": {
+    ".": {
+      "import": "./dist/use-ui.js",
+      "require": "./dist/use-ui.umd.cjs"
+    }
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "vite build"
   },
   "keywords": [],
   "author": "",
