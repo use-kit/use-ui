@@ -10,5 +10,5 @@ const onClick = (event: Event) => emit('click', event)
 </script>
 
 <template>
-  <button @click="onClick($event)">Use Button</button>
+  <button color-rose-400 color-red-400 @click="onClick($event)">Use Button</button>
 </template>

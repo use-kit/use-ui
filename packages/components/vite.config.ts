@@ -15,7 +15,9 @@ export default defineConfig({
   },
   plugins: [
     vue(),
-    unocss(),
+    unocss({
+      mode: 'vue-scoped',
+    }),
     dts({
       outputDir: 'dist/types'
     }),
