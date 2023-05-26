@@ -1,26 +1,33 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import unocss from 'unocss/vite'
+import unoCSS from 'unocss/vite'
 import dts from 'vite-plugin-dts'
-import libCss from 'vite-plugin-libcss'
+import libCSS from 'vite-plugin-libcss'
 
+// https://vitejs.dev/config/
 export default defineConfig({
   build: {
-    // minify: false,
+    minify: false,
     lib: {
-      entry: 'index.ts',
-      name: 'use-ui',
-      fileName: 'use-ui'
+      entry: 'src/index.ts',
+      name: '@use-ui/vue',
+      fileName: 'index',
+    },
+    rollupOptions: {
+      external: ['vue'],
+      output: {
+        globals: {
+          vue: 'Vue',
+        },
+      },
     },
   },
   plugins: [
     vue(),
-    unocss({
-      mode: 'vue-scoped',
-    }),
+    unoCSS(),
     dts({
-      outputDir: 'dist/types'
+      outputDir: 'dist/types',
     }),
-    libCss(),
-  ]
+    libCSS(),
+  ],
 })

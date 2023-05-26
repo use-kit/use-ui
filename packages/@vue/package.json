@@ -2,28 +2,59 @@
   "name": "@use-ui/vue",
   "version": "0.0.0",
   "description": "",
-  "type": "module",
+  "author": "Akashi Sai <akashi_sai@163.com>",
+  "license": "MIT",
+  "funding": "https://github.com/sponsors/akashigakki",
+  "homepage": "https://github.com/use-kit/use-ui#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/use-kit/use-ui.git"
+  },
+  "bugs": "https://github.com/use-kit/use-ui/issues",
+  "keywords": [],
+  "sideEffects": false,
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/types/index.d.ts",
   "files": [
     "dist"
   ],
-  "main": "./dist/use-ui.umd.cjs",
-  "module": "./dist/use-ui.js",
-  "exports": {
-    ".": {
-      "import": "./dist/use-ui.js",
-      "require": "./dist/use-ui.umd.cjs"
-    }
-  },
   "scripts": {
-    "dev": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "lint": "eslint .",
+    "prepublishOnly": "nr build",
+    "release": "bumpp && npm publish",
+    "test": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "unocss": "^0.52.3"
   },
   "devDependencies": {
-    "unocss": "^0.45.7",
-    "vite-plugin-dts": "^1.4.1",
-    "vite-plugin-libcss": "^1.0.5"
+    "@antfu/eslint-config": "^0.39.3",
+    "@antfu/ni": "^0.21.3",
+    "@antfu/utils": "^0.7.2",
+    "@types/node": "^18.16.15",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "bumpp": "^9.1.0",
+    "eslint": "^8.41.0",
+    "esno": "^0.16.3",
+    "lint-staged": "^13.2.2",
+    "pnpm": "^8.5.1",
+    "rimraf": "^5.0.1",
+    "simple-git-hooks": "^2.8.1",
+    "typescript": "^5.0.4",
+    "unbuild": "^1.2.1",
+    "vite": "^4.3.8",
+    "vite-plugin-dts": "^2.3.0",
+    "vite-plugin-libcss": "^1.0.6",
+    "vitest": "^0.31.1",
+    "vue": "^3.3.4"
   },
-  "keywords": [],
-  "author": "akashi",
-  "license": "MIT"
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  }
 }
