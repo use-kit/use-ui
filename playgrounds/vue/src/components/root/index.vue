@@ -1,31 +1,20 @@
 <template>
-  <div class="content">
-    <div class="icon-content">
-      <a href="https://github.com/use-kit" target="_blank">
-        <img src="/use.svg" class="logo use" alt="Vite logo">
-      </a>
-      <a href="https://vitejs.dev" target="_blank">
-        <img src="/vite.svg" class="logo vite" alt="Vite logo">
-      </a>
-      <a href="https://vuejs.org/" target="_blank">
-        <img src="/vue.svg" class="logo vue" alt="Vue logo">
-      </a>
-    </div>
-
-    <h2>🎉🎉 Use UI 🎈🎈</h2>
+  <div class="icon-content">
+    <a href="https://github.com/use-kit" target="_blank">
+      <img src="/use.svg" class="logo use" alt="Vite logo">
+    </a>
+    <a href="https://vitejs.dev" target="_blank">
+      <img src="/vite.svg" class="logo vite" alt="Vite logo">
+    </a>
+    <a href="https://vuejs.org/" target="_blank">
+      <img src="/vue.svg" class="logo vue" alt="Vue logo">
+    </a>
   </div>
+
+  <h2>🎉🎉 Use UI 🎈🎈</h2>
 </template>
 
 <style scoped>
-.content {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
 .logo {
   height: 6em;
   padding: 1.5em;

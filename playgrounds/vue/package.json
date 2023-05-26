@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
+    "lint": "eslint . --fix",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -14,6 +15,9 @@
     "vue-router": "^4.2.1"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^0.39.3",
+    "@antfu/ni": "^0.21.3",
+    "@antfu/utils": "^0.7.2",
     "@vitejs/plugin-vue": "^4.1.0",
     "typescript": "^5.0.2",
     "vite": "^4.3.2",

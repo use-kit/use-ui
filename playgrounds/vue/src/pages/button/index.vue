@@ -3,7 +3,7 @@ import { UButton } from '@use-ui/vue'
 </script>
 
 <template>
-  <div class="display-content">
+  <div>
     <button>Test</button>
     <UButton />
   </div>
