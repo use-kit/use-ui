@@ -48,7 +48,8 @@
     "vite": "^4.3.8",
     "vite-plugin-dts": "^2.3.0",
     "vite-plugin-libcss": "^1.0.6",
-    "vitest": "^0.31.1"
+    "vitest": "^0.31.1",
+    "vue": "^3.3.4"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"

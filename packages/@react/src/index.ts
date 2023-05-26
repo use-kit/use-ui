@@ -1,2 +1,3 @@
-export const one = 1
-export const two = 2
+import 'virtual:uno.css'
+
+export * from './components'
