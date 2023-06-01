@@ -1,6 +1,6 @@
 import { UMenu } from '@use-ui/react'
 
-function Button() {
+function Menu() {
   return (
     <>
       <UMenu />
@@ -8,4 +8,4 @@ function Button() {
   )
 }
 
-export default Button
+export default Menu
