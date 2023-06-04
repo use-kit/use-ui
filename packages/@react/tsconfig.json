@@ -5,8 +5,7 @@
     "target": "es2018",
     "lib": ["DOM", "ESNext"],
     "strict": true,
-    "rootDir": "./src",
-    "jsx": "react-jsx",
+    "jsx": "preserve",
     "esModuleInterop": true,
     "skipLibCheck": true,
     "moduleResolution": "bundler",
@@ -20,6 +19,5 @@
       "~/*": ["src/*"]
     }
   },
-  "include": ["src"],
   "exclude": ["dist", "node_modules"]
 }

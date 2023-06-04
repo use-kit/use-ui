@@ -1,3 +1,10 @@
 {
   "extends": "@antfu"
+  // "extends": [
+  //   "eslint:recommended",
+  //   "plugin:@typescript-eslint/recommended",
+  //   "plugin:react-hooks/recommended"
+  // ],
+  // "parser": "@typescript-eslint/parser",
+  // "plugins": ["react-refresh", "@typescript-eslint/eslint-plugin"]
 }
